@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+header {
+    background-color: #262626;
+
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;  
+}
+
+.nav-branding{
+    font-size: 2rem;
+}
+
+.nav-link:hover{
+    color: dodgerblue;
+}
+
+/* this class won't display in desktop or big screens */
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+/* this class is only for mobile or small screens */
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+}
+
+@media(max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+
+}
